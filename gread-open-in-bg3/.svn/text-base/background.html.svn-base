@@ -1,0 +1,16 @@
+<html>
+    <script>
+        function open_in_background(url){
+            if (!url){ return; }
+            chrome.tabs.create({"url":url, "selected":false});
+        }
+        
+        chrome.extension.onRequest.addListener(
+            function(request, sender, sendResponse) {
+                if (request.func == "open_in_background" && request.url){
+                    open_in_background(request.url);
+                }
+            }
+        );
+    </script>
+</html>

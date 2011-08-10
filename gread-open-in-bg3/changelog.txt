@@ -1,0 +1,17 @@
+Google Reader: Open in background tab
+
+CHANGELOG
+
+0.4
+* Minor fixes
+
+0.3
+* Fixed: Interferences with form elements
+
+0.2
+* Changed event handling so that it doesn't interfere with pre-defined listeners
+* Fixed: 'v' key not working in other areas like email post to friend
+* Fixed: Does not work in Expanded view
+
+0.1
+* Initial publish

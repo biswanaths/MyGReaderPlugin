@@ -1,0 +1,18 @@
+{
+  "name": "Google Reader: Open in background tab",
+  "version": "0.4",
+  "description": "Opens new tabs in background when you press 'v' in Google reader.",
+  "background_page": "background.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/reader/view/*",
+        "https://*/reader/view/*"
+      ],
+      "js": ["openinbg.js"]
+    }
+  ],
+  "permissions": [
+    "tabs"
+  ]
+}
